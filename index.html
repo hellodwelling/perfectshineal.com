@@ -14,6 +14,7 @@
     
     <script src="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4f07488cb7.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
     
     <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/132055281_763789660879284_821002551475049920_n.jpg" property="og:image">
@@ -27,7 +28,7 @@
     
     
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
 
       <title>Perfect Shine AL Pressure Washing - The Best Residential &amp; Commericial Exterior Cleaning in Jefferson County, Alabama & surrounding areas.  </title>
 
@@ -251,6 +252,7 @@
                                  
                            
                   
+
                </div>
             
             
@@ -351,7 +353,8 @@
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
                 <h1 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h1>
                 <h2 class="my-3 mb-10 text-xl font-medium text-black-500 text-center">See why our customers love us</h2>
-                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row">
+                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false }" @keydown.escape= "open = false">
+
                 
                     
                     
@@ -363,57 +366,57 @@
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8UBUYGP4C6QOADNMO5V2GMLHWLOOFS5UXMR2UBBV.jpeg"  alt = "Photo number 2 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Hardscape &amp; Deck Cleaning job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8UBUYGP4C6QOADNMO5V2GMLHWLOOFS5UXMR2UBBV.jpeg"  alt = "Photo number 2 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Hardscape &amp; Deck Cleaning job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/D9X7X5W7185HCIINLWB4YM5E8RJSHOVQM5BHREJS.jpeg"  alt = "Photo number 3 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Exterior Cleaning job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/D9X7X5W7185HCIINLWB4YM5E8RJSHOVQM5BHREJS.jpeg"  alt = "Photo number 3 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Exterior Cleaning job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3IT9BKXGCHITX881LQSRFFXHKLYKVCZ7STLC6PI4.jpeg"  alt = "Photo number 4 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3IT9BKXGCHITX881LQSRFFXHKLYKVCZ7STLC6PI4.jpeg"  alt = "Photo number 4 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/U6NFOQ7AHJV5QPXM9RLPDDXXGDV9Z9EJJLPY104X.jpeg"  alt = "Photo number 5 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Hardscape &amp; Deck Cleaning job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/U6NFOQ7AHJV5QPXM9RLPDDXXGDV9Z9EJJLPY104X.jpeg"  alt = "Photo number 5 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Hardscape &amp; Deck Cleaning job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0O2Y8U15X2NWQDW75QIS2FYZY3T8ZIY31588FRKX.jpeg"  alt = "Photo number 6 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Exterior Cleaning job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0O2Y8U15X2NWQDW75QIS2FYZY3T8ZIY31588FRKX.jpeg"  alt = "Photo number 6 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Exterior Cleaning job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/AEB9H2MZG1F3ZEZK6IHEWO4C37N3WAZUJXBGTQIY.jpeg"  alt = "Photo number 7 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/AEB9H2MZG1F3ZEZK6IHEWO4C37N3WAZUJXBGTQIY.jpeg"  alt = "Photo number 7 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/IK2DLTBP85PLU5QOSR579V3WIK2KZ11UI1SIU4MP.jpeg"  alt = "Photo number 8 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/IK2DLTBP85PLU5QOSR579V3WIK2KZ11UI1SIU4MP.jpeg"  alt = "Photo number 8 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JZN74A1QL0S06XBSG8TJE0PZW4OMOD8TNX9Z8Y2Q.jpeg"  alt = "Photo number 9 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JZN74A1QL0S06XBSG8TJE0PZW4OMOD8TNX9Z8Y2Q.jpeg"  alt = "Photo number 9 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/PMFOKHBZV1N8EAGY4YFWHXCMDRK7BTM4X5HZA0W6.jpeg"  alt = "Photo number 10 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Exterior Cleaning job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/PMFOKHBZV1N8EAGY4YFWHXCMDRK7BTM4X5HZA0W6.jpeg"  alt = "Photo number 10 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Exterior Cleaning job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JSWG1IL41RXNE65X0XGBYE4ZDNHKOXZ8M5K8Y75X.jpeg"  alt = "Photo number 11 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Hardscape &amp; Deck Cleaning job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JSWG1IL41RXNE65X0XGBYE4ZDNHKOXZ8M5K8Y75X.jpeg"  alt = "Photo number 11 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Hardscape &amp; Deck Cleaning job"   loading="lazy" ></div>
                     
                 
                     
                                 
-                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/V0V52FD5KGLZS8QHLR3VNC5D40YLC0LDNCBNNUG7.jpeg"  alt = "Photo number 12 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Hardscape &amp; Deck Cleaning job"   loading="lazy" ></div>
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/V0V52FD5KGLZS8QHLR3VNC5D40YLC0LDNCBNNUG7.jpeg"  alt = "Photo number 12 of Perfect Shine AL Pressure Washing&#x27;s best work performing a Hardscape &amp; Deck Cleaning job"   loading="lazy" ></div>
                     
                  
                 </div>     
@@ -687,8 +690,8 @@
 <section id= "faqs" class="py-16   bg-black text-white  md:py-20 lg:py-24">
     <div class="max-w-5xl px-12 mx-auto xl:px-0">
 
-        <h1 class="text-3xl  font-bold md:text-4xl lg:text-6xl xl:text-7xl text-center ">Faqs</h1>
-        <h2 class="mt-4 text-xl font-thin  lg:text-2xl text-center lg:text-left">Your questions answered</h2>
+        <h1 class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl">Faqs</h1>
+         <h2 class="my-3 mb-10  text-xl font-medium text-black-500 text-center">Your questions answered</h2>
 
         <div class="relative mt-12 space-y-3">
 
